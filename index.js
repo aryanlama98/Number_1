@@ -6,67 +6,110 @@ data types - string, number, boolean, null, undefined, symbol, object
 Everything inside paranthesis is an expression/object
 */
 
-let a = "Aryan"
-let b = 6
-console.log(a + b)
-
-//Chapter 1.02
-console.log(typeof (a + b))
-
-//Operators: = + - * / % ** ++ -- += -= *= /= %= **=
+//Operators: = + - * / % ** 
 let d = 20;  
 let e = 5;
+
 console.log(d + e)
 console.log(d - e)
 console.log(d * e)
-console.log(d ** e) //To the power of
+console.log(d ** e) //To the power of: Exponentiation 
 console.log(d / e)
-console.log(d % e) //Prints the Quotient
+console.log(d % e) //Prints the Quotient: Modulus
 
-let c = 4
-console.log(c += 2)
 
-let f = 5
+//Unary Operators 
+let f = 5 
 let g = 10
 
-//Arithmetic Operators 
 console.log(f++) //post-increment - Increased the value of a2 after printing
 console.log(g--) //post-decrement - Decreased the value of b2 after printing
-console.log(+f) //pre-increment - Increased the value of a2 before printing
+console.log(++f) //pre-increment - Increased the value of a2 before printing
 console.log(--g) //pre-decrement - Decreased the value of b2 before printing
+
 
 //Assignment Operators: = += -= *= %= **=
 let h = 11
-console.log(h += 2)
-console.log(h -= 2)
-console.log(h *= 2)
+
+console.log(h += 2) // also means h = h + 2
+console.log(h -= 2) // also means h = h - 2
+console.log(h *= 2) // also means h = h * 2
+console.log(h /= 2) // also means h = h / 2
+console.log(h **= 2) // also means h = h ** 2 : Expo or to the power. 
+
 
 //Comparison Operators: Equal to:== Equal to & Type:=== Not equal to:!= Not equal to &type: !== 
 let i = 12
 let j = 14
 let k = '12'
 
-if (i === k) {
-  console.log('i and k are strictly equal')
-} else {
-  console.log('i and k are not strictly equal')
+console.log(i === j)
+console.log(i !== j)
+console.log(i == k)
+
+
+//Continuted Comparison Operators: greater then >, greater then equal to >=, less than <= and <=.  
+console.log( i < 14)
+console.log(i <= 14)
+console.log(j > i)
+console.log(j >= i)
+
+
+//Logical Operators: Evaluate Multiple expressions and results true or false
+//Logical AND &&: Only if all the values are true
+let l = 20
+let m = 30
+
+console.log(l < m && l !== m)
+
+//Logical OR ||: If any condition or case is true
+let n = 20
+let o = 30
+
+console.log(n > o || n == o)
+
+//Logical NOT !: If operand is ture its boolean value will be false and vice versa. 
+let p = 32
+
+console.log(!(p < 30))
+
+
+// Conditional Statements;
+//if statement
+let age = 18 //[Change this value to print console.log]
+
+if (age > 18) {
+  console.log("You are eligible for full drivers license.")
+} 
+if (age < 18) {
+  console.log("You can apply for your learners permit.")
 }
 
-if (i !== j) {
-  console.log('i and j are not strcitly equal')
-} else{
-  console.log('i and j are strictly equal')
+
+// if-else statement
+let number = 2
+
+if (number > 2) {
+  console.log("You are eligible for 20% discount.")
+}else {
+  console.log("More than 3 items qualify for 20% discount.")
 }
 
-//Chapter 1.04
-const dict = {
-  appreciate: "recognize the full worth of",
-  ataraxia: "a state of freedom from emotional disturbance and anxiety",
-  yakka: "work, especially hard work",
+let int = 2
+
+if (int%2 === 0){
+  console.log("Even")
+}else{
+  console.log("Odd")
 }
-console.log(dict.appreciate)
 
-//Expressions: Every value written in the code is expression.
-//77;"Aryan"; false;
+//else-if statement
+let range = 100
 
-
+if (range <= 20) {
+  console.log("You are a kid.")
+}else if(range >=20){
+  console.log("You are an adult")
+}else{
+  console.log("You are a senior citizen.")
+}
